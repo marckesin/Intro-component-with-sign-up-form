@@ -27,9 +27,39 @@
             </p>
           </div>
           <div class="col-right">
-            Try it free 7 days then $20/mo. thereafter First Name Last Name
-            Email Address Password Claim your free trial By clicking the button,
-            you are agreeing to our Terms and Services
+            <button class="seven-days">
+              <strong>Try it free 7 days </strong>
+              then $20/mo. thereafter
+            </button>
+            <div class="container-form">
+              <form action="">
+                <input type="text" placeholder="First Name" value="" required />
+                <small>First name cannot be empty</small>
+                <input type="text" placeholder="Last Name" value="" required />
+                <small>Last name cannot be empty</small>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  value=""
+                  required
+                />
+                <small>Looks like this is not an email</small>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value=""
+                  required
+                />
+                <small>Password cannot be empty</small>
+                <button class="trial" type="submit">
+                  CLAIM YOUR FREE TRIAL
+                </button>
+                <p>
+                  By clicking the button, you are agreeing to our
+                  <span> Terms and Services</span>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </main>
@@ -44,5 +74,6 @@
         </p>
       </footer>
     </div>
+    <script src="javascripts/script.js"></script>
   </body>
 </html>
