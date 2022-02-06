@@ -252,6 +252,11 @@ small {
   body {
     height: 165vh;
   }
+
+  main {
+    margin: 0 auto;
+  }
+
   .container {
     height: 100%;
     background: url("../images/bg-intro-mobile.png") no-repeat;
@@ -277,6 +282,7 @@ small {
   .row {
     flex-direction: column;
     width: 85%;
+    margin-top: 4rem;
 
     .col-left {
       padding-right: 0;
