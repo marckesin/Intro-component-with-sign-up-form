@@ -56,19 +56,13 @@ input {
   width: 100%;
   height: 3rem;
   padding: 0;
+  margin: 0.3rem 0 1.25rem;
   border: 1px solid #d4d4d4;
   outline-color: #b9b6d3;
   padding-left: 2rem;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 600;
-}
-
-input[type=email]:invalid,
-input[type=password]:invalid {
-  color: #ff7a7a;
-  outline-color: #ff7a7a;
-  border-color: #ff7a7a;
 }
 
 main {
@@ -78,10 +72,11 @@ main {
 small {
   font-size: 0.6rem;
   font-style: italic;
-  display: block;
   text-align: end;
   color: #ff7a7a;
-  margin: 0.3rem 0 1.25rem;
+  position: absolute;
+  top: 3rem;
+  right: 0;
 }
 
 .attribution {
@@ -92,6 +87,10 @@ small {
 
 .attribution a {
   color: white;
+}
+
+.col-left {
+  padding-right: 4rem;
 }
 
 .col-left,
@@ -147,12 +146,23 @@ small {
   color: white;
 }
 
+.error-input {
+  position: relative;
+}
+
 .heading {
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.2;
   color: white;
   margin-bottom: 1rem;
+}
+
+.icon-error {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+  margin-top: 0.75rem;
 }
 
 .row {
@@ -194,6 +204,7 @@ small {
   width: 100%;
   height: 3rem;
   padding: 0;
+  margin: 0.3rem 0 1.25rem;
   border: 1px solid #d4d4d4;
   outline-color: #b9b6d3;
   padding-left: 2rem;
@@ -224,6 +235,10 @@ small {
   -moz-box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
 }
 
+.visibility {
+  display: none;
+}
+
 @media (max-width: 576px) {
   .container {
     height: 175vh;
@@ -235,8 +250,8 @@ small {
   }
 
   .description {
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     margin-bottom: 3.5rem;
   }
 
