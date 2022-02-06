@@ -33,25 +33,70 @@
             </button>
             <div class="container-form">
               <form action="">
-                <input type="text" placeholder="First Name" value="" required />
-                <small>First name cannot be empty</small>
-                <input type="text" placeholder="Last Name" value="" required />
-                <small>Last name cannot be empty</small>
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  value=""
-                  required
-                />
-                <small>Looks like this is not an email</small>
-                <input
-                  type="password"
-                  placeholder="Password"
-                  value=""
-                  required
-                />
-                <small>Password cannot be empty</small>
-                <button class="trial" type="submit">
+                <div class="error-input">
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    placeholder="First Name"
+                    value=""
+                  />
+                  <img
+                    class="icon-error visibility"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                  <small class="visibility">First name cannot be empty</small>
+                </div>
+                <div class="error-input">
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Last Name"
+                    value=""
+                  />
+                  <img
+                    class="icon-error visibility"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                  <small class="visibility">Last name cannot be empty</small>
+                </div>
+                <div class="error-input">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                    value=""
+                  />
+                  <img
+                    class="icon-error visibility"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                  <small class="visibility"
+                    >Looks like this is not an email</small
+                  >
+                </div>
+                <div class="error-input">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    value=""
+                  />
+                  <img
+                    class="icon-error visibility"
+                    src="images/icon-error.svg"
+                    alt=""
+                  />
+                  <small class="visibility">Password cannot be empty</small>
+                </div>
+                <button class="trial" id="submit" type="submit">
                   CLAIM YOUR FREE TRIAL
                 </button>
                 <p>
