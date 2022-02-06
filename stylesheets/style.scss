@@ -109,7 +109,7 @@ small {
 }
 
 .col-left {
-  padding-right: 4rem;
+  padding-right: 5rem;
 }
 
 .col-left,
@@ -242,9 +242,15 @@ small {
   display: none;
 }
 
+@media (min-width: 1450px) {
+  .row {
+    width: 65%;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
-    height: 175vh;
+    height: 110vh;
     background: url("../images/bg-intro-mobile.png") no-repeat;
   }
 
@@ -268,6 +274,10 @@ small {
   .row {
     flex-direction: column;
     width: 85%;
+
+    .col-left {
+      padding-right: 0;
+    }
 
     .col-left,
     .col-right {
