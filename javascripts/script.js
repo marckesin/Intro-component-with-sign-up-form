@@ -32,7 +32,9 @@ document.getElementById("submit").addEventListener("click", event => {
   const items = {
     firstName: document.getElementById("firstName").value,
     lastName: document.getElementById("lastName").value,
-    email: document.getElementById("email").value,
+    email: document
+      .getElementById("email")
+      .value.match(document.getElementById("email").pattern),
     password: document.getElementById("password").value,
   };
 
