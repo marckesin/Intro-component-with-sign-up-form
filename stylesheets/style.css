@@ -84,7 +84,6 @@ small {
   text-align: center;
   color: white;
 }
-
 .attribution a {
   color: white;
 }
@@ -110,6 +109,16 @@ small {
   background: url("../images/bg-intro-desktop.png") no-repeat;
   position: relative;
 }
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff7a7a;
+  z-index: -1;
+}
 
 .container-form {
   padding: 1.75rem;
@@ -127,17 +136,6 @@ small {
 .container-form span {
   color: #ff7a7a;
   font-weight: 700;
-}
-
-.container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff7a7a;
-  z-index: -1;
 }
 
 .description {
@@ -186,11 +184,9 @@ small {
   transition: background 0.3s;
   position: relative;
 }
-
 .seven-days:hover {
   background-color: #6b61a8;
 }
-
 .seven-days:active {
   top: 3px;
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.15);
@@ -221,11 +217,9 @@ small {
   -webkit-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.25);
 }
-
 .trial:hover {
   background-color: #66cca0;
 }
-
 .trial:active {
   top: 2px;
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);

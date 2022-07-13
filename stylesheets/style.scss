@@ -50,9 +50,10 @@ small {
   font-size: 11px;
   text-align: center;
   color: $white;
-}
-.attribution a {
-  color: $white;
+
+  a {
+    color: $white;
+  }
 }
 
 .col-left {
@@ -75,6 +76,17 @@ small {
   padding-bottom: 5px;
   background: url("../images/bg-intro-desktop.png") no-repeat;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $red;
+    z-index: -1;
+  }
 }
 
 .container-form {
@@ -92,17 +104,6 @@ small {
     color: $red;
     font-weight: 700;
   }
-}
-
-.container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $red;
-  z-index: -1;
 }
 
 .description {
@@ -148,15 +149,15 @@ small {
   cursor: pointer;
   transition: background 0.3s;
   position: relative;
-}
 
-.seven-days:hover {
-  background-color: hsl(248, 29%, 52%);
-}
+  &:hover {
+    background-color: hsl(248, 29%, 52%);
+  }
 
-.seven-days:active {
-  top: 3px;
-  @include shadow-box(5px, 0.15);
+  &:active {
+    top: 3px;
+    @include shadow-box(5px, 0.15);
+  }
 }
 
 .trial {
@@ -171,15 +172,15 @@ small {
   transition: background 0.3s;
   cursor: pointer;
   @include shadow-box(3px, 0.25);
-}
 
-.trial:hover {
-  background-color: hsl(154, 50%, 60%);
-}
+  &:hover {
+    background-color: hsl(154, 50%, 60%);
+  }
 
-.trial:active {
-  top: 2px;
-  @include shadow-box(2px, 0.25);
+  &:active {
+    top: 2px;
+    @include shadow-box(2px, 0.25);
+  }
 }
 
 .visibility {
